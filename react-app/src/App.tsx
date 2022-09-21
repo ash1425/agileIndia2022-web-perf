@@ -42,6 +42,22 @@ function App() {
           </h2>
           <Contributors repo={"react"} owner={"facebook"} />
         </div>
+        <hr />
+        <div>
+          <h2>Images</h2>
+          <img
+            src="//images.ctfassets.net/hq4skgadvikw/1eSEj3DFlbUsp05pAkxgcf/60c6993816eb836b4f0d51cbd871478f/IMG_2863.JPG"
+            alt={"dog-indian"}
+            height={100}
+            width={100}
+          />
+          <img
+            src="//images.ctfassets.net/hq4skgadvikw/4ibqcQmP42Zwt9RuSazWJ9/bcc5b889f3efd3273ae1c93027ea6ad5/PXL_20220304_022408641.jpg"
+            alt={"dog-labrador"}
+            height={100}
+            width={100}
+          />
+        </div>
       </main>
     </div>
   );
