@@ -16,18 +16,13 @@ function App() {
           height={100}
         />
         <div>Demo : Performance Matters</div>
+        <img
+          className={"Hero-Image"}
+          src="//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG"
+          alt={"hero"}
+        />
       </header>
       <main>
-        <div className={"Twitter-Feed"}>
-          <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="agileindia"
-            options={{
-              height: 300,
-            }}
-          />
-        </div>
-        <hr />
         <div>
           <h2>
             Github Contributors for &nbsp;
@@ -56,6 +51,28 @@ function App() {
             alt={"dog-labrador"}
             height={100}
             width={100}
+          />
+          <img
+            src="//images.ctfassets.net/hq4skgadvikw/1gN8oA6ZbFNhVJXDwSdvY7/ed35a84cf3a8539ec3366913dfcfdbca/PXL_20220822_085517527.jpg"
+            alt={"landscape1"}
+            height={100}
+            width={100}
+          />
+          <img
+            src="//images.ctfassets.net/hq4skgadvikw/7qvvsxv3NbJAuyM1rLmNQK/24646f482060cb33db7640a8db1c5c8a/PXL_20220921_023221646_2.jpg"
+            alt={"landscape2"}
+            height={100}
+            width={100}
+          />
+        </div>
+        <hr />
+        <div className={"Twitter-Feed"}>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="agileindia"
+            options={{
+              height: 300,
+            }}
           />
         </div>
       </main>

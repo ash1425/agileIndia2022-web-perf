@@ -24,6 +24,16 @@
     color: white;
 }
 
+.Hero-Image {
+    width: 60vw;
+    height: 55vh;
+    margin: 20px auto;
+}
+
+.Key {
+    font-weight: 700;
+}
+
 .App-link {
     color: #61dafb;
     padding-bottom: 5vh;

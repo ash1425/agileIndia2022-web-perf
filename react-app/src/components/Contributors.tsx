@@ -8,7 +8,7 @@ type Props = {
 };
 
 type Contributor = {
-  name?: string;
+  login?: string;
   id?: string;
   avatar_url?: string;
   type: string;
@@ -25,7 +25,7 @@ const Contributors = ({ repo, owner }: Props) => {
         const contributors = response.data.map(
           (c) =>
             ({
-              name: c.name,
+              login: c.login,
               id: c.id,
               type: c.type,
               avatar_url: c.avatar_url,
@@ -47,9 +47,18 @@ const Contributors = ({ repo, owner }: Props) => {
             <div>
               <img src={contributor.avatar_url} className={"Avatar"} />
             </div>
-            <div>Id: {contributor.id}</div>
-            <div>Name: {contributor.name}</div>
-            <div>type: {contributor.type}</div>
+            <div>
+              <span className={"Key"}>Id: </span>
+              {contributor.id}
+            </div>
+            <div>
+              <span className={"Key"}>Login: </span>
+              {contributor.login}
+            </div>
+            <div>
+              <span className={"Key"}>Type: </span>
+              {contributor.type}
+            </div>
           </div>
         );
       })}
