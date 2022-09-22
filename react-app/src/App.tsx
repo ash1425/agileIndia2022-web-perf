@@ -17,6 +17,7 @@ function App() {
         />
         <div>Demo : Performance Matters</div>
         <img
+          loading={"eager"}
           className={"Hero-Image"}
           src="//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG"
           alt={"hero"}
@@ -68,6 +69,15 @@ function App() {
         <hr />
         <div className={"Twitter-Feed"}>
           <TwitterTimelineEmbed
+            placeholder={
+              <img
+                height={300}
+                src={
+                  "https://i.pinimg.com/originals/5e/86/32/5e8632cc9b79c2ecdbf3581b2f96f05b.gif"
+                }
+                alt={"loading"}
+              />
+            }
             sourceType="profile"
             screenName="agileindia"
             options={{
