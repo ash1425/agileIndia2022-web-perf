@@ -60,6 +60,7 @@ function App() {
             width={100}
           />
           <img
+            // src="//images.ctfassets.net/hq4skgadvikw/7qvvsxv3NbJAuyM1rLmNQK/24646f482060cb33db7640a8db1c5c8a/PXL_20220921_023221646_2.jpg?fl=progressive&w=100&h=100&q=50"
             src="//images.ctfassets.net/hq4skgadvikw/7qvvsxv3NbJAuyM1rLmNQK/24646f482060cb33db7640a8db1c5c8a/PXL_20220921_023221646_2.jpg"
             alt={"landscape2"}
             height={100}

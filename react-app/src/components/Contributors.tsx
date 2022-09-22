@@ -40,7 +40,7 @@ const Contributors = ({ repo, owner }: Props) => {
   }, []);
 
   return (
-    <div>
+    <div style={{ height: "1700px" }}>
       {contributors.map((contributor, index) => {
         return (
           <div key={index} className={"Contributor"}>
