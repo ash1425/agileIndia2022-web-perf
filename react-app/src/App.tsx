@@ -69,15 +69,15 @@ function App() {
         <hr />
         <div className={"Twitter-Feed"}>
           <TwitterTimelineEmbed
-            placeholder={
-              <img
-                height={300}
-                src={
-                  "https://i.pinimg.com/originals/5e/86/32/5e8632cc9b79c2ecdbf3581b2f96f05b.gif"
-                }
-                alt={"loading"}
-              />
-            }
+            // placeholder={
+            //   <img
+            //     height={300}
+            //     src={
+            //       "https://i.pinimg.com/originals/5e/86/32/5e8632cc9b79c2ecdbf3581b2f96f05b.gif"
+            //     }
+            //     alt={"loading"}
+            //   />
+            // }
             sourceType="profile"
             screenName="agileindia"
             options={{
