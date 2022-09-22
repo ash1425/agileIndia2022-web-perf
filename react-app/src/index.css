@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Petit Formal Script";
+    font-family: "Inter", Times, serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

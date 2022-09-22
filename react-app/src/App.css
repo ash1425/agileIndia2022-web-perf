@@ -25,8 +25,8 @@
 }
 
 .Hero-Image {
-    width: 60vw;
-    height: 55vh;
+    width: auto;
+    height: auto;
     margin: 20px auto;
 }
 

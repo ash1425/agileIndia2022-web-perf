@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img
+          loading={"eager"}
           src={logo}
           className="App-logo"
           alt="logo"
@@ -16,12 +17,13 @@ function App() {
           height={100}
         />
         <div>Demo : Performance Matters</div>
-        <img
-          loading={"eager"}
-          className={"Hero-Image"}
-          src="//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG"
-          alt={"hero"}
-        />
+        <div className={"Hero-Image"}>
+          <img
+            loading={"eager"}
+            src="//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG?w=1200"
+            alt={"hero"}
+          />
+        </div>
       </header>
       <main>
         <div>
