@@ -3,12 +3,29 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Partytown } from "@builder.io/partytown/react";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Partytown
+      debug={true}
+      forward={["dataLayer.push"]}
+      resolveUrl={function (url, location, type) {
+        if (type === "script") {
+          const proxyUrl = new URL("https://cdn.builder.codes/api/v1/js-proxy");
+          proxyUrl.searchParams.append("url", url.href);
+          proxyUrl.searchParams.append(
+            "apiKey",
+            "d431478b1d0b4d15b3f3642e7a50e0b7"
+          );
+          return proxyUrl;
+        }
+        return url;
+      }}
+    />
     <App />
   </React.StrictMode>
 );

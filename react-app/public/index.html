@@ -4,10 +4,10 @@
     <meta charset="utf-8"/>
     <!--    <link as="image" rel="preload"-->
     <!--          href="//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG">-->
-<!--    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">-->
+    <!--    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">-->
 
-<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
-<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
@@ -34,19 +34,22 @@
     -->
     <title>React App</title>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PRTSB6H');</script>
+    <script type="text/partytown">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PRTSB6H');
+
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 <body>
