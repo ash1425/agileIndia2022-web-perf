@@ -20,7 +20,9 @@ function App() {
         <div className={"Hero-Image"}>
           <img
             loading={"eager"}
-            src="//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG?w=1200"
+            src={`//images.ctfassets.net/hq4skgadvikw/2uoHgORYxo5CctauG9R2Ag/96e26ac72f77e7208a37b12f1c5a104d/IMG_0809.JPG?w=${
+              window.innerWidth < 400 ? "300" : "1200"
+            }`}
             alt={"hero"}
           />
         </div>
